@@ -2,7 +2,7 @@
   "name": "free-email-domains",
   "description": "A comprehensive list of all free email domain providers",
   "homepage": "https://documentup.com/Kikobeats/free-email-domains",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "index.js",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
