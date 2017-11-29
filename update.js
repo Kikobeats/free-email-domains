@@ -2,15 +2,15 @@
 
 const got = require('got')
 const cheerio = require('cheerio')
-const {concat} = require('lodash')
+const { concat } = require('lodash')
 const jsonFuture = require('json-future')
 
-const URL = 'https://knowledge.hubspot.com/articles/kcs_article/forms/what-domains-are-blocked-when-using-the-forms-email-domains-to-block-feature'
+const URL =
+  'https://knowledge.hubspot.com/articles/kcs_article/forms/what-domains-are-blocked-when-using-the-forms-email-domains-to-block-feature'
 
 const REGEX_SEPARATOR = new RegExp('<br>', 'g')
-
 ;(async () => {
-  const {body} = await got(URL)
+  const { body } = await got(URL)
 
   const $ = cheerio.load(body)
   let result = []

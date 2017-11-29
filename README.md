@@ -20,7 +20,7 @@ $ npm install free-email-domains --save
 
 ```js
 const freeEmailDomains = require('free-email-domains')
-freeEmailDomains.includes('gmail.com') //=> true
+freeEmailDomains.includes('gmail.com') // => true
 ```
 
 ## License
