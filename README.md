@@ -1,7 +1,5 @@
 # free-email-domains
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/Kikobeats/free-email-domains.svg)](https://greenkeeper.io/)
-
 ![Last version](https://img.shields.io/github/tag/Kikobeats/free-email-domains.svg?style=flat-square)
 [![Build Status](https://img.shields.io/travis/Kikobeats/free-email-domains/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/free-email-domains)
 [![Coverage Status](https://img.shields.io/coveralls/Kikobeats/free-email-domains.svg?style=flat-square)](https://coveralls.io/github/Kikobeats/free-email-domains)
