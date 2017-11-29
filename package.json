@@ -13,23 +13,26 @@
     "type": "git",
     "url": "git+https://github.com/kikobeats/free-email-domains.git"
   },
-  "files": [
-    "index.js",
-    "domains.json"
-  ],
   "bugs": {
     "url": "https://github.com/Kikobeats/free-email-domains/issues"
   },
-  "keywords": [],
-  "dependencies": {
-    "cheerio": "~1.0.0-rc.2"
-  },
+  "keywords": [
+    "block",
+    "domain",
+    "domains",
+    "email",
+    "form",
+    "free",
+    "hubspot",
+    "mail"
+  ],
   "devDependencies": {
+    "cheerio": "latest",
     "coveralls": "latest",
     "git-dirty": "latest",
-    "got": "~8.0.0",
+    "got": "latest",
     "husky": "latest",
-    "json-future": "~2.1.2",
+    "json-future": "latest",
     "lint-staged": "latest",
     "mocha": "latest",
     "nyc": "latest",
@@ -41,6 +44,10 @@
   "engines": {
     "node": ">= 6"
   },
+  "files": [
+    "domains.json",
+    "index.js"
+  ],
   "scripts": {
     "clean": "rm -rf node_modules",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
