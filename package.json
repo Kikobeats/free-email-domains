@@ -2,7 +2,7 @@
   "name": "free-email-domains",
   "description": "A comprehensive list of all free email domain providers",
   "homepage": "https://documentup.com/Kikobeats/free-email-domains",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
@@ -27,14 +27,14 @@
     "mail"
   ],
   "devDependencies": {
-    "get-stdin": "latest",
-    "lodash": "latest",
     "cheerio": "latest",
     "coveralls": "latest",
+    "get-stdin": "latest",
     "git-dirty": "latest",
     "husky": "latest",
     "json-future": "latest",
     "lint-staged": "latest",
+    "lodash": "latest",
     "mocha": "latest",
     "nyc": "latest",
     "prettier-standard": "latest",
@@ -46,8 +46,8 @@
     "node": ">= 6"
   },
   "files": [
-    "scripts",
-    "index.js"
+    "index.js",
+    "scripts"
   ],
   "scripts": {
     "clean": "rm -rf node_modules",

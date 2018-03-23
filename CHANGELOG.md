@@ -1,3 +1,10 @@
+<a name="1.0.1"></a>
+## 1.0.1 (2018-03-23)
+
+* Generate file on postinstall ([faa65eb](https://github.com/kikobeats/free-email-domains/commit/faa65eb))
+
+
+
 <a name="1.0.0"></a>
 # 1.0.0 (2017-11-29)
 
