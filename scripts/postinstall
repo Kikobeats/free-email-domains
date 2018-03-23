@@ -1,16 +1,16 @@
+#!/usr/bin/env node
+
 'use strict'
 
-const got = require('got')
-const cheerio = require('cheerio')
-const { concat } = require('lodash')
 const jsonFuture = require('json-future')
-
-const URL =
-  'https://knowledge.hubspot.com/articles/kcs_article/forms/what-domains-are-blocked-when-using-the-forms-email-domains-to-block-feature'
+const getStdin = require('get-stdin')
+const { concat } = require('lodash')
+const cheerio = require('cheerio')
 
 const REGEX_SEPARATOR = new RegExp('<br>', 'g')
+
 ;(async () => {
-  const { body } = await got(URL)
+  const body = await getStdin()
 
   const $ = cheerio.load(body)
   let result = []
@@ -26,6 +26,5 @@ const REGEX_SEPARATOR = new RegExp('<br>', 'g')
     }
   })
 
-  jsonFuture.save('domains.json', result)
-  console.log(`done! ${result.length} added`)
+  await jsonFuture.saveAsync('domains.json', result)
 })()

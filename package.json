@@ -27,10 +27,11 @@
     "mail"
   ],
   "devDependencies": {
+    "get-stdin": "latest",
+    "lodash": "latest",
     "cheerio": "latest",
     "coveralls": "latest",
     "git-dirty": "latest",
-    "got": "latest",
     "husky": "latest",
     "json-future": "latest",
     "lint-staged": "latest",
@@ -45,13 +46,14 @@
     "node": ">= 6"
   },
   "files": [
-    "domains.json",
+    "scripts",
     "index.js"
   ],
   "scripts": {
     "clean": "rm -rf node_modules",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "lint": "standard-markdown && standard",
+    "postinstall": "curl -sL https://knowledge.hubspot.com/articles/kcs_article/forms/what-domains-are-blocked-when-using-the-forms-email-domains-to-block-feature | ./scripts/postinstall",
     "precommit": "lint-staged",
     "pretest": "npm run lint",
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
