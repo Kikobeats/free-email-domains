@@ -2,7 +2,7 @@
   "name": "free-email-domains",
   "description": "A comprehensive list of all free email domain providers",
   "homepage": "https://documentup.com/Kikobeats/free-email-domains",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
@@ -59,6 +59,11 @@
     "test": "nyc mocha"
   },
   "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "*.js": [
       "prettier-standard",
@@ -69,10 +74,5 @@
     "env": [
       "mocha"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }

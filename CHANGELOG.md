@@ -1,3 +1,12 @@
+<a name="1.0.2"></a>
+## 1.0.2 (2018-10-14)
+
+* Block standard version ([c2a7122](https://github.com/kikobeats/free-email-domains/commit/c2a7122))
+* Handle errors ([afedd8a](https://github.com/kikobeats/free-email-domains/commit/afedd8a))
+* Migrate husky ([afb33a5](https://github.com/kikobeats/free-email-domains/commit/afb33a5))
+
+
+
 <a name="1.0.1"></a>
 ## 1.0.1 (2018-03-23)
 
