@@ -9,22 +9,20 @@ const cheerio = require('cheerio')
 
 const REGEX_SEPARATOR = new RegExp('<br>', 'g')
 
-;(async () => {
-  const body = await getStdin()
-
+const save = async body => {
   const $ = cheerio.load(body)
   let result = []
 
   $('span > p').each(function (i, el) {
     if (i !== 0) {
-      const domains = $(this)
-        .html()
-        .replace(REGEX_SEPARATOR, ' ')
-        .split(' ')
-
+      const domains = $(this).html().replace(REGEX_SEPARATOR, ' ').split(' ')
       result = concat(result, domains)
     }
   })
-
   await jsonFuture.saveAsync('domains.json', result)
-})()
+}
+
+getStdin().then(save).catch(err => {
+  console.log('ERR!', err)
+  process.exit(1)
+})
