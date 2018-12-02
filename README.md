@@ -23,6 +23,10 @@ const freeEmailDomains = require('free-email-domains')
 freeEmailDomains.includes('gmail.com') // => true
 ```
 
+## Related
+
+- [email-providers](https://github.com/derhuerst/email-providers) – Top 3k common emails by Alexa rank.
+
 ## License
 
 **free-email-domains** © [Kiko Beats](https://kikobeats.com), Released under the [MIT](https://github.com/Kikobeats/free-email-domains/blob/master/LICENSE.md) License.<br>
