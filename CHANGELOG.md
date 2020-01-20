@@ -1,3 +1,10 @@
+## <small>1.0.3 (2020-01-20)</small>
+
+* build: update meta ([2a4f6ec](https://github.com/kikobeats/free-email-domains/commit/2a4f6ec))
+* Update README.md ([a5a2e72](https://github.com/kikobeats/free-email-domains/commit/a5a2e72))
+
+
+
 <a name="1.0.2"></a>
 ## 1.0.2 (2018-10-14)
 
