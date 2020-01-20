@@ -1,7 +1,7 @@
 {
   "name": "free-email-domains",
   "description": "A comprehensive list of all free email domain providers",
-  "homepage": "https://documentup.com/Kikobeats/free-email-domains",
+  "homepage": "https://nicedoc.io/Kikobeats/free-email-domains",
   "version": "1.0.2",
   "main": "index.js",
   "author": {
@@ -39,7 +39,7 @@
     "nyc": "latest",
     "prettier-standard": "latest",
     "should": "latest",
-    "standard": "11",
+    "standard": "latest",
     "standard-markdown": "latest"
   },
   "engines": {
