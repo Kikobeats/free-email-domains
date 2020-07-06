@@ -3,7 +3,7 @@
   "description": "A comprehensive list of all free email domain providers",
   "homepage": "https://nicedoc.io/Kikobeats/free-email-domains",
   "version": "1.0.3",
-  "main": "index.js",
+  "main": "domains.json",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
     "name": "Kiko Beats",
@@ -26,13 +26,15 @@
     "hubspot",
     "mail"
   ],
+  "dependencies": {
+    "cheerio": "~1.0.0-rc.3",
+    "got": "~11.4.0",
+    "json-future": "~2.2.4"
+  },
   "devDependencies": {
-    "cheerio": "latest",
     "coveralls": "latest",
-    "get-stdin": "latest",
     "git-dirty": "latest",
     "husky": "latest",
-    "json-future": "latest",
     "lint-staged": "latest",
     "lodash": "latest",
     "mocha": "latest",
@@ -53,7 +55,7 @@
     "clean": "rm -rf node_modules",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "lint": "standard-markdown && standard",
-    "postinstall": "curl -sL https://knowledge.hubspot.com/articles/kcs_article/forms/what-domains-are-blocked-when-using-the-forms-email-domains-to-block-feature | ./scripts/postinstall",
+    "postinstall": "node scripts/postinstall",
     "pretest": "npm run lint",
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
     "test": "nyc mocha"
@@ -66,8 +68,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "prettier-standard",
-      "git add"
+      "prettier-standard"
     ]
   },
   "standard": {
