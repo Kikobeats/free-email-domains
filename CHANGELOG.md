@@ -1,9 +1,8 @@
-## <small>1.0.3 (2020-01-20)</small>
+# Changelog
 
-* build: update meta ([2a4f6ec](https://github.com/kikobeats/free-email-domains/commit/2a4f6ec))
-* Update README.md ([a5a2e72](https://github.com/kikobeats/free-email-domains/commit/a5a2e72))
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-
+### 1.0.4 (2020-07-06)
 
 <a name="1.0.2"></a>
 ## 1.0.2 (2018-10-14)
@@ -29,6 +28,3 @@
 * Update meta ([02349c9](https://github.com/kikobeats/free-email-domains/commit/02349c9))
 * Update README.md ([3e0c11e](https://github.com/kikobeats/free-email-domains/commit/3e0c11e))
 * docs(readme): add Greenkeeper badge ([af89158](https://github.com/kikobeats/free-email-domains/commit/af89158))
-
-
-
