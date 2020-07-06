@@ -32,55 +32,59 @@
     "json-future": "~2.2.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "ci-publish": "latest",
+    "conventional-github-releaser": "latest",
     "coveralls": "latest",
+    "finepack": "latest",
+    "git-authors-cli": "latest",
     "git-dirty": "latest",
     "husky": "latest",
     "lint-staged": "latest",
     "lodash": "latest",
     "mocha": "latest",
+    "npm-check-updates": "latest",
     "nyc": "latest",
     "prettier-standard": "latest",
     "should": "latest",
     "standard": "latest",
     "standard-markdown": "latest",
-    "@commitlint/cli": "latest",
-    "@commitlint/config-conventional": "latest",
-    "ci-publish": "latest",
-    "conventional-github-releaser": "latest",
-    "finepack": "latest",
-    "git-authors-cli": "latest",
-    "npm-check-updates": "latest",
     "standard-version": "latest"
   },
   "engines": {
     "node": ">= 6"
   },
   "files": [
-    "index.js",
     "scripts"
   ],
   "scripts": {
     "clean": "rm -rf node_modules",
+    "contributors": "(git-authors-cli && finepack && git add package.json && git commit -m 'build: contributors' --no-verify) || true",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "lint": "standard-markdown && standard",
     "postinstall": "node scripts/postinstall",
-    "pretest": "npm run lint",
-    "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
-    "test": "nyc mocha",
-    "contributors": "(git-authors-cli && finepack && git add package.json && git commit -m 'build: contributors' --no-verify) || true",
     "postrelease": "npm run release:tags && npm run release:github && ci-publish",
     "prerelease": "npm run update:check && npm run contributors",
+    "pretest": "npm run lint",
+    "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
+    "release": "standard-version -a",
     "release:github": "conventional-github-releaser -p angular",
     "release:tags": "git push --follow-tags origin HEAD:master",
-    "release": "standard-version -a",
-    "update:check": "ncu -- --error-level 2",
-    "update": "ncu -u"
+    "test": "nyc mocha",
+    "update": "ncu -u",
+    "update:check": "ncu -- --error-level 2"
   },
   "license": "MIT",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
@@ -94,11 +98,6 @@
   "standard": {
     "env": [
       "mocha"
-    ]
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
     ]
   }
 }
