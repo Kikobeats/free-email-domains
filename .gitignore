@@ -33,3 +33,4 @@ coverage
 # Other
 ############################
 domains.json
+.envrc
