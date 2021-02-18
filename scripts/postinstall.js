@@ -3,29 +3,23 @@
 'use strict'
 
 const jsonFuture = require('json-future')
-const cheerio = require('cheerio')
 const got = require('got')
 
+/* List of free email domains by HubSpot
+   https://knowledge.hubspot.com/forms/what-domains-are-blocked-when-using-the-forms-email-domains-to-block-feature */
 const fetchList = () =>
   got(
-    'https://knowledge.hubspot.com/articles/kcs_article/forms/what-domains-are-blocked-when-using-the-forms-email-domains-to-block-feature'
+    'https://f.hubspotusercontent40.net/hubfs/2832391/Marketing/Lead-Capture/free-domains-1.csv'
   ).text()
 
-const REGEX_SEPARATOR = new RegExp('<br>', 'g')
+const trim = (text) =>
+  text.replace(/^\s+|\s+$/g, '')
 
 const save = async body => {
-  const $ = cheerio.load(body)
-  let result = []
+  const result = body.split(/,/g)
+    .map(trim)
+    .filter(Boolean)
 
-  $('span > p').each(function (i, el) {
-    if (i !== 0) {
-      const domains = $(this)
-        .html()
-        .replace(REGEX_SEPARATOR, ' ')
-        .split(' ')
-      result = result.concat(domains)
-    }
-  })
   await jsonFuture.saveAsync('domains.json', result)
 }
 
