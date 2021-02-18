@@ -5,6 +5,8 @@
 const jsonFuture = require('json-future')
 const got = require('got')
 
+/* List of free email domains by HubSpot
+   https://knowledge.hubspot.com/forms/what-domains-are-blocked-when-using-the-forms-email-domains-to-block-feature */
 const fetchList = () =>
   got(
     'https://f.hubspotusercontent40.net/hubfs/2832391/Marketing/Lead-Capture/free-domains-1.csv'
