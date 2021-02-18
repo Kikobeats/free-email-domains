@@ -9,6 +9,12 @@
     "name": "Kiko Beats",
     "url": "https://kikobeats.com"
   },
+  "contributors": [
+    {
+      "name": "Ivan Voskoboinyk",
+      "email": "ivan@prezly.com"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kikobeats/free-email-domains.git"
