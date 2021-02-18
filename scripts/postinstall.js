@@ -11,7 +11,7 @@ const fetchList = () =>
   ).text()
 
 const trim = (text) =>
-  text.replace(/^\s+|\s+$|,$/g, '')
+  text.replace(/^\s+|\s+$/g, '')
 
 const save = async body => {
   const result = body.split(/,/g)
