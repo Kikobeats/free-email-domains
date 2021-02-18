@@ -16,7 +16,7 @@ const trim = (text) =>
 const save = async body => {
   const result = body.split(/,/g)
     .map(trim)
-    .filter()
+    .filter(Boolean)
 
   await jsonFuture.saveAsync('domains.json', result)
 }
