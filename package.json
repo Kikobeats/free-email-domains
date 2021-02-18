@@ -27,8 +27,8 @@
     "mail"
   ],
   "dependencies": {
-    "got": "~11.8.0",
-    "json-future": "~2.2.4"
+    "got": "~11.8.1",
+    "json-future": "~2.2.13"
   },
   "devDependencies": {
     "@commitlint/cli": "latest",
