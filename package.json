@@ -33,7 +33,7 @@
     "mail"
   ],
   "dependencies": {
-    "got": "~11.8.1",
+    "got": "~11.8.2",
     "json-future": "~2.2.13"
   },
   "devDependencies": {
@@ -45,7 +45,6 @@
     "finepack": "latest",
     "git-authors-cli": "latest",
     "git-dirty": "latest",
-    "husky": "latest",
     "lint-staged": "latest",
     "lodash": "latest",
     "mocha": "latest",
@@ -53,6 +52,7 @@
     "nyc": "latest",
     "prettier-standard": "latest",
     "should": "latest",
+    "simple-git-hooks": "latest",
     "standard": "latest",
     "standard-markdown": "latest",
     "standard-version": "latest"
@@ -67,6 +67,8 @@
     "clean": "rm -rf node_modules",
     "contributors": "(git-authors-cli && finepack && git add package.json && git commit -m 'build: contributors' --no-verify) || true",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "cronjob": "npm run update:emails && npm run healthcheck",
+    "healthcheck": "curl -sL https://hc-ping.com/d31c557f-0946-4b37-92d9-6110f75d764c",
     "lint": "standard-markdown && standard",
     "postinstall": "node scripts/postinstall",
     "postrelease": "npm run release:tags && npm run release:github && ci-publish",
@@ -78,7 +80,8 @@
     "release:tags": "git push --follow-tags origin HEAD:master",
     "test": "nyc mocha",
     "update": "ncu -u",
-    "update:check": "ncu -- --error-level 2"
+    "update:check": "ncu -- --error-level 2",
+    "update:emails": "(npm run postinstall && git add top-sites.json && git commit -m 'build(update): emails' --no-verify && git push) || true"
   },
   "license": "MIT",
   "commitlint": {
@@ -86,19 +89,20 @@
       "@commitlint/config-conventional"
     ]
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
-    "*.js": [
-      "prettier-standard"
-    ],
     "package.json": [
       "finepack"
+    ],
+    "*.js,!*.min.js,": [
+      "prettier-standard"
+    ],
+    "*.md": [
+      "standard-markdown"
     ]
+  },
+  "simple-git-hooks": {
+    "commit-msg": "npx commitlint --edit",
+    "pre-commit": "npx lint-staged"
   },
   "standard": {
     "env": [
