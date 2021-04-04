@@ -61,6 +61,7 @@
     "node": ">= 6"
   },
   "files": [
+    "domains.json",
     "scripts"
   ],
   "scripts": {
@@ -81,7 +82,7 @@
     "test": "nyc mocha",
     "update": "ncu -u",
     "update:check": "ncu -- --error-level 2",
-    "update:emails": "(npm run postinstall && git add top-sites.json && git commit -m 'build(update): emails' --no-verify && git push) || true"
+    "update:emails": "(npm run postinstall && git add domains.json && git commit -m 'build(update): emails' --no-verify && git push) || true"
   },
   "license": "MIT",
   "commitlint": {
