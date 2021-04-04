@@ -71,7 +71,7 @@
     "healthcheck": "curl -sL https://hc-ping.com/d31c557f-0946-4b37-92d9-6110f75d764c",
     "lint": "standard-markdown && standard",
     "postinstall": "node scripts/postinstall",
-    "postrelease": "npm run release:tags && npm run release:github && ci-publish",
+    "postrelease": "npm run release:tags && npm run release:github && (ci-publish || npm publish --access=public)",
     "prerelease": "npm run update:check && npm run contributors",
     "pretest": "npm run lint",
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
