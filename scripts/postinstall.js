@@ -16,7 +16,7 @@ const trim = (text) =>
   text.replace(/^\s+|\s+$/g, '')
 
 const save = async body => {
-const result = body.split(/[,\n]/g)
+  const result = body.split(/[,\n]/g)
     .map(trim)
     .filter(Boolean)
 
