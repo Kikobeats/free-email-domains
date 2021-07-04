@@ -1,8 +1,6 @@
 # free-email-domains
 
 ![Last version](https://img.shields.io/github/tag/Kikobeats/free-email-domains.svg?style=flat-square)
-[![Build Status](https://img.shields.io/travis/Kikobeats/free-email-domains/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/free-email-domains)
-[![Coverage Status](https://img.shields.io/coveralls/Kikobeats/free-email-domains.svg?style=flat-square)](https://coveralls.io/github/Kikobeats/free-email-domains)
 [![NPM Status](https://img.shields.io/npm/dm/free-email-domains.svg?style=flat-square)](https://www.npmjs.org/package/free-email-domains)
 
 > A comprehensive list of all free email domain providers. Based on [HubSpot blocked domains](https://knowledge.hubspot.com/articles/kcs_article/forms/what-domains-are-blocked-when-using-the-forms-email-domains-to-block-feature).
