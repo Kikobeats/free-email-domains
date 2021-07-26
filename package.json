@@ -2,7 +2,7 @@
   "name": "free-email-domains",
   "description": "A comprehensive list of all free email domain providers",
   "homepage": "https://nicedoc.io/Kikobeats/free-email-domains",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "main": "domains.json",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
