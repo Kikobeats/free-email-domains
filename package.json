@@ -68,8 +68,8 @@
     "node": ">= 6"
   },
   "files": [
-    "domains.json",
     "domains.js",
+    "domains.json",
     "scripts"
   ],
   "scripts": {
