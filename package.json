@@ -52,9 +52,9 @@
     "finepack": "latest",
     "git-authors-cli": "latest",
     "git-dirty": "latest",
-    "nano-staged": "latest",
     "lodash": "latest",
     "mocha": "latest",
+    "nano-staged": "latest",
     "npm-check-updates": "latest",
     "nyc": "latest",
     "prettier-standard": "latest",
@@ -98,14 +98,14 @@
     ]
   },
   "nano-staged": {
-    "package.json": [
-      "finepack"
-    ],
     "*.js,!*.min.js,": [
       "prettier-standard"
     ],
     "*.md": [
       "standard-markdown"
+    ],
+    "package.json": [
+      "finepack"
     ]
   },
   "simple-git-hooks": {
