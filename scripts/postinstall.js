@@ -9,14 +9,14 @@ const got = require('got')
    https://knowledge.hubspot.com/forms/what-domains-are-blocked-when-using-the-forms-email-domains-to-block-feature */
 const fetchList = () =>
   got(
-    'https://f.hubspotusercontent40.net/hubfs/2832391/Marketing/Lead-Capture/free-domains-1.csv'
+    'https://f.hubspotusercontent40.net/hubfs/2832391/Marketing/Lead-Capture/free-domains-2.csv'
   ).text()
 
-const trim = (text) =>
-  text.replace(/^\s+|\s+$/g, '')
+const trim = text => text.replace(/^\s+|\s+$/g, '')
 
 const save = async body => {
-  const result = body.split(/[,\n]/g)
+  const result = body
+    .split(/[,\n]/g)
     .map(trim)
     .filter(Boolean)
 
