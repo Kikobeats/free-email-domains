@@ -15,10 +15,7 @@ const fetchList = () =>
 const trim = text => text.replace(/^\s+|\s+$/g, '')
 
 const save = async body => {
-  const result = body
-    .split(/[,\n]/g)
-    .map(trim)
-    .filter(Boolean)
+  const result = body.split(/[,\n]/g).map(trim).filter(Boolean)
 
   await jsonFuture.saveAsync('domains.json', result)
 }

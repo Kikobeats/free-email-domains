@@ -83,7 +83,7 @@
   ],
   "scripts": {
     "clean": "rm -rf node_modules",
-    "contributors": "(git-authors-cli && finepack && git add package.json && git commit -m 'build: contributors' --no-verify) || true",
+    "contributors": "(npx git-authors-cli && npx finepack && git add package.json && git commit -m 'build: contributors' --no-verify) || true",
     "cronjob": "npm run update:emails && npm run healthcheck",
     "healthcheck": "curl -sL https://hc-ping.com/d31c557f-0946-4b37-92d9-6110f75d764c",
     "lint": "standard-markdown && standard",
