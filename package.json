@@ -49,7 +49,7 @@
     "mail"
   ],
   "dependencies": {
-    "got": "~11.8.5",
+    "got": "~12.5.3",
     "json-future": "~2.2.13"
   },
   "devDependencies": {
@@ -85,7 +85,7 @@
     "cronjob": "npm run update:emails && npm run healthcheck",
     "healthcheck": "curl -sL https://hc-ping.com/d31c557f-0946-4b37-92d9-6110f75d764c",
     "lint": "standard-markdown && standard",
-    "postinstall": "node scripts/postinstall",
+    "postinstall": "node scripts/postinstall.mjs",
     "postrelease": "npm run release:tags && npm run release:github && (ci-publish || npm publish --access=public)",
     "prerelease": "npm run update:check && npm run contributors",
     "pretest": "npm run lint",
