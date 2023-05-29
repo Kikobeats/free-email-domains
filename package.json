@@ -49,7 +49,7 @@
     "mail"
   ],
   "dependencies": {
-    "got": "~12.5.3",
+    "got": "~13.0.0",
     "json-future": "~2.2.13"
   },
   "devDependencies": {
