@@ -82,7 +82,7 @@
     "clean": "rm -rf node_modules",
     "contributors": "(npx git-authors-cli && npx finepack && git add package.json && git commit -m 'build: contributors' --no-verify) || true",
     "cronjob": "npm run update:emails && npm run healthcheck",
-    "healthcheck": "curl -sL https://hc-ping.com/5da57132-d653-45c9-820b-87d7e03115a3",
+    "healthcheck": "curl -fsS -m 10 --retry 5 -o /dev/null https://hc-ping.com/5da57132-d653-45c9-820b-87d7e03115a3",
     "lint": "standard-markdown && standard",
     "postinstall": "node scripts/postinstall.mjs",
     "postrelease": "npm run release:tags && npm run release:github && (ci-publish || npm publish --access=public)",
