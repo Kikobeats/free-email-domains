@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.2.0 (2023-06-21)
+
+
+### Features
+
+* more domains ([#45](https://github.com/kikobeats/free-email-domains/issues/45)) ([7a2086e](https://github.com/kikobeats/free-email-domains/commit/7a2086ea8f15ccfe02939c02e3c3266cd8b3e05e))
+
 ## 1.1.0 (2023-06-21)
 
 
