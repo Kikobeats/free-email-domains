@@ -1,4 +1,12 @@
 import { writeFile } from 'node:fs/promises'
+import simpleGet from 'simple-get'
+
+const get = (url, opts) =>
+  new Promise((resolve, reject) =>
+    simpleGet.concat({ url: url.toString(), ...opts }, (err, res, data) =>
+      err ? reject(err) : resolve({ res, data })
+    )
+  )
 
 /* List of free email domains by HubSpot
    https://knowledge.hubspot.com/forms/what-domains-are-blocked-when-using-the-forms-email-domains-to-block-feature */
@@ -13,8 +21,8 @@ const trim = text => text.replace(/^\s+|\s+$/g, '')
 const sanetize = text => text.split(/[,\n]/g).map(trim).filter(Boolean)
 
 try {
-  const raw = await fetch(URL).then(res => res.text())
-  const domains = new Set(sanetize(raw))
+  const data = await get(URL).then(res => res.data.toString())
+  const domains = new Set(sanetize(data))
   for (const domain of DOMAINS) domains.add(domain)
   const sorted = Array.from(domains).sort()
   await writeFile('domains.json', JSON.stringify(sorted, null, 2))

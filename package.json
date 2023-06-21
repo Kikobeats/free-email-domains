@@ -48,6 +48,9 @@
     "hubspot",
     "mail"
   ],
+  "dependencies": {
+    "simple-get": "~4.0.1"
+  },
   "devDependencies": {
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
@@ -66,7 +69,7 @@
     "standard-version": "latest"
   },
   "engines": {
-    "node": ">= 18"
+    "node": ">= 14"
   },
   "files": [
     "domains.js",
