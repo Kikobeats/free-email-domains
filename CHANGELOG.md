@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.2.2 (2023-06-21)
+
+
+### Bug Fixes
+
+* add request library ([339d85b](https://github.com/kikobeats/free-email-domains/commit/339d85bb31229e7fd48951b0dece42f2df889cd9)), closes [#46](https://github.com/kikobeats/free-email-domains/issues/46)
+
 ### 1.2.1 (2023-06-21)
 
 
