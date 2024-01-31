@@ -27,4 +27,8 @@ jobs:
         run: |
           git config --global user.email ${{ secrets.GIT_EMAIL }}
           git config --global user.name ${{ secrets.GIT_USERNAME }}g
-          npm run cronjob
+          npm run postinstall
+          git add domains.json
+          git commit -m 'build(update): emails' --no-verify
+          git push origin ${{ github.head_ref }} || true
+          curl -fsS -m 10 --retry 5 -o /dev/null https://hc-ping.com/5da57132-d653-45c9-820b-87d7e03115a3
