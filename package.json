@@ -86,7 +86,6 @@
     "lint": "standard-markdown && standard",
     "postinstall": "node scripts/postinstall.mjs",
     "postrelease": "npm run release:tags && npm run release:github && (ci-publish || npm publish --access=public)",
-    "prerelease": "npm run update:check",
     "pretest": "npm run lint",
     "release": "standard-version -a",
     "release:github": "github-generate-release",
