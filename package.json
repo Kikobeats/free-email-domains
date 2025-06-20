@@ -115,7 +115,6 @@
       "finepack"
     ]
   },
-  "packageManager": "pnpm@7.33.5+sha256.1416b06a1fbe95d370f393dea02318d71f11c9db6fe2d3e4f33710504859a5ae",
   "simple-git-hooks": {
     "commit-msg": "npx commitlint --edit",
     "pre-commit": "npx nano-staged"

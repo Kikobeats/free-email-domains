@@ -14,7 +14,19 @@ const URL =
   'https://f.hubspotusercontent40.net/hubfs/2832391/Marketing/Lead-Capture/free-domains-2.csv'
 
 /** Additional domains not present in the URL */
-const DOMAINS = ['pm.me', 'proton.me', 'protonmail.ch']
+const DOMAINS = [
+  'pm.me',
+  'proton.me',
+  'protonmail.ch',
+  'sharklasers.com',
+  'guerrillamail.com',
+  '10minutemail.com',
+  'spambox.xyz',
+  'emailondeck.com',
+  'temp-mail.org',
+  'tempmail.net',
+  'mail.tm'
+]
 
 const trim = text => text.replace(/^\s+|\s+$/g, '')
 
