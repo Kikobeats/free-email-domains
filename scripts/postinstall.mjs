@@ -1,12 +1,4 @@
 import { writeFile } from 'node:fs/promises'
-import simpleGet from 'simple-get'
-
-const get = (url, opts) =>
-  new Promise((resolve, reject) =>
-    simpleGet.concat({ url: url.toString(), ...opts }, (err, res, data) =>
-      err ? reject(err) : resolve({ res, data })
-    )
-  )
 
 /* List of free email domains by HubSpot
    https://knowledge.hubspot.com/forms/what-domains-are-blocked-when-using-the-forms-email-domains-to-block-feature */
@@ -32,13 +24,21 @@ const trim = text => text.replace(/^\s+|\s+$/g, '')
 
 const sanetize = text => text.split(/[,\n]/g).map(trim).filter(Boolean)
 
-try {
-  const data = await get(URL).then(res => res.data.toString())
-  const domains = new Set(sanetize(data))
+async function main () {
+  const res = await fetch(URL)
+
+  if (!res.ok) throw new Error(`HTTP Error ${res.status}`)
+
+  const csvData = await res.text()
+
+  if (csvData.startsWith('<!DOCTYPE html') || csvData.includes('<html')) {
+    throw new Error('Received HTML instead of CSV')
+  }
+
+  const domains = new Set(sanetize(csvData))
   for (const domain of DOMAINS) domains.add(domain)
   const sorted = Array.from(domains).sort()
   await writeFile('domains.json', JSON.stringify(sorted, null, 2))
-} catch (error) {
-  console.error(error)
-  process.exit(1)
 }
+
+main().catch(error => console.error(error) || process.exit(1))
