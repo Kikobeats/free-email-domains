@@ -1,2 +1,2 @@
-import freeEmailDomains from './domains.json' assert { type: 'json' }
+import freeEmailDomains from './domains.json' with { type: 'json' }
 export = freeEmailDomains
