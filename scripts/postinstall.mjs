@@ -7,17 +7,39 @@ const URL =
 
 /** Additional domains not present in the URL */
 const DOMAINS = [
+  '10minutemail.com',
+  'chol.com',
+  'chollian.net',
+  'daum.net',
+  'dreamwiz.com',
+  'emailondeck.com',
+  'empal.com',
+  'empas.com',
+  'freechal.com',
+  'guerrillamail.com',
+  'hanafos.com',
+  'hananet.net',
+  'hanmail2.net',
+  'hanmir.com',
+  'hitel.net',
+  'kakao.com',
+  'kornet.net',
+  'lycos.co.kr',
+  'mail.tm',
+  'nate.com',
+  'netsgo.com',
+  'nownuri.net',
+  'paran.com',
   'pm.me',
   'proton.me',
   'protonmail.ch',
   'sharklasers.com',
-  'guerrillamail.com',
-  '10minutemail.com',
   'spambox.xyz',
-  'emailondeck.com',
   'temp-mail.org',
   'tempmail.net',
-  'mail.tm'
+  'thrunet.com',
+  'tistory.com',
+  'unitel.co.kr'
 ]
 
 const trim = text => text.replace(/^\s+|\s+$/g, '')
