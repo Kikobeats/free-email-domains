@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.3.0 (2026-05-09)
+
+
+### Features
+
+* add Korean free email providers ([#62](https://github.com/kikobeats/free-email-domains/issues/62)) ([8befc41](https://github.com/kikobeats/free-email-domains/commit/8befc41a0366fac0bc54390974dd75983eb442e2))
+
 ### 1.2.28 (2026-05-09)
 
 ### 1.2.27 (2026-05-09)
