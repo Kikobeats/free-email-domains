@@ -8,12 +8,15 @@ const SOURCES = [
   {
     name: 'Castle disposable email domains',
     url: 'https://raw.githubusercontent.com/castle/disposable-email-domains/master/disposable-email-domains.txt'
+  },
+  {
+    name: 'Disposable email domains blocklist',
+    url: 'https://raw.githubusercontent.com/disposable-email-domains/disposable-email-domains/main/disposable_email_blocklist.conf'
   }
 ]
 
 /** Additional domains not present in the URL */
 const DOMAINS = [
-  '10minutemail.com',
   '2iij.net',
   'asahi-net.or.jp',
   'au.com',
@@ -31,7 +34,6 @@ const DOMAINS = [
   'docomo.ne.jp',
   'dreamwiz.com',
   'dti.ne.jp',
-  'emailondeck.com',
   'emnet.ne.jp',
   'emobile.ne.jp',
   'eonet.ne.jp',
@@ -57,7 +59,6 @@ const DOMAINS = [
   'livedoor.com',
   'mail.goo.ne.jp',
   'mail.sony.jp',
-  'mail.tm',
   'megaegg.ne.jp',
   'mesh.ad.jp',
   'mineo.jp',
@@ -88,7 +89,6 @@ const DOMAINS = [
   'spaaqs.ne.jp',
   'spambox.xyz',
   't-com.ne.jp',
-  'temp-mail.org',
   'tempmail.net',
   'thrunet.com',
   'tiki.ne.jp',
