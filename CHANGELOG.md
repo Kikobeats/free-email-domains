@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.7.0 (2026-05-11)
+
+
+### Features
+
+* add castle source and deduplicate manual domains ([#64](https://github.com/kikobeats/free-email-domains/issues/64)) ([5aa7f8a](https://github.com/kikobeats/free-email-domains/commit/5aa7f8aa61f5361d8bbcb208fbffbf2db74bc429))
+
 ## 1.6.0 (2026-05-11)
 
 
