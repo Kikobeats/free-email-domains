@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.9.0 (2026-05-11)
+
+
+### Features
+
+* add disposable-email-domains blocklist source ([#65](https://github.com/kikobeats/free-email-domains/issues/65)) ([739110d](https://github.com/kikobeats/free-email-domains/commit/739110d75ea65fba53f715eee14a6e86007d9c8b))
+
 ## 1.8.0 (2026-05-11)
 
 
