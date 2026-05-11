@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.5.0 (2026-05-11)
+
+
+### Features
+
+* Add Japanese free email providers ([#63](https://github.com/kikobeats/free-email-domains/issues/63)) ([11583ff](https://github.com/kikobeats/free-email-domains/commit/11583ff904b8761687615d5481df254a7cd3a28c))
+
 ## 1.4.0 (2026-05-09)
 
 
