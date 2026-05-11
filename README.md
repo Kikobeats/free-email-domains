@@ -3,7 +3,13 @@
 ![Last version](https://img.shields.io/github/tag/Kikobeats/free-email-domains.svg?style=flat-square)
 [![NPM Status](https://img.shields.io/npm/dm/free-email-domains.svg?style=flat-square)](https://www.npmjs.org/package/free-email-domains)
 
-> A comprehensive list of all free email domain providers. Based on [HubSpot blocked domains](https://knowledge.hubspot.com/articles/kcs_article/forms/what-domains-are-blocked-when-using-the-forms-email-domains-to-block-feature).
+> Curated list of free and disposable email domains for signup filtering, lead quality, and abuse prevention.
+
+## Why use it
+
+- Block temporary or throwaway inboxes during signup.
+- Reduce fake form submissions.
+- Keep CRM and email workflows cleaner.
 
 ## Install
 
@@ -15,7 +21,15 @@ $ npm install free-email-domains --save
 
 ```js
 const freeEmailDomains = require('free-email-domains')
+
 freeEmailDomains.includes('gmail.com') // => true
+freeEmailDomains.includes('your-company.com') // => false
+```
+
+## Update data
+
+```bash
+$ node scripts/postinstall.mjs
 ```
 
 ## Related

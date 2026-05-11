@@ -1,9 +1,15 @@
 import { writeFile } from 'node:fs/promises'
 
-/* List of free email domains by HubSpot
-   https://knowledge.hubspot.com/forms/what-domains-are-blocked-when-using-the-forms-email-domains-to-block-feature */
-const URL =
-  'https://f.hubspotusercontent40.net/hubfs/2832391/Marketing/Lead-Capture/free-domains-2.csv'
+const SOURCES = [
+  {
+    name: 'HubSpot blocked domains',
+    url: 'https://f.hubspotusercontent40.net/hubfs/2832391/Marketing/Lead-Capture/free-domains-2.csv'
+  },
+  {
+    name: 'Castle disposable email domains',
+    url: 'https://raw.githubusercontent.com/castle/disposable-email-domains/master/disposable-email-domains.txt'
+  }
+]
 
 /** Additional domains not present in the URL */
 const DOMAINS = [
@@ -28,13 +34,10 @@ const DOMAINS = [
   'emailondeck.com',
   'emnet.ne.jp',
   'emobile.ne.jp',
-  'empal.com',
-  'empas.com',
   'eonet.ne.jp',
   'ezweb.ne.jp',
   'freechal.com',
   'freemail.ne.jp',
-  'guerrillamail.com',
   'hanafos.com',
   'hananet.net',
   'hanmail2.net',
@@ -52,7 +55,6 @@ const DOMAINS = [
   'kcn.ne.jp',
   'kornet.net',
   'livedoor.com',
-  'lycos.co.kr',
   'mail.goo.ne.jp',
   'mail.sony.jp',
   'mail.tm',
@@ -78,7 +80,6 @@ const DOMAINS = [
   'protonmail.ch',
   'rakumail.jp',
   'rakuten.jp',
-  'sharklasers.com',
   'sky.tkc.ne.jp',
   'sky.tkk.ne.jp',
   'sky.tu-ka.ne.jp',
@@ -108,20 +109,31 @@ const DOMAINS = [
 
 const trim = text => text.replace(/^\s+|\s+$/g, '')
 
-const sanetize = text => text.split(/[,\n]/g).map(trim).filter(Boolean)
+const sanitize = text =>
+  text
+    .split(/[,\n]/g)
+    .map(trim)
+    .filter(domain => domain && !domain.startsWith('#'))
 
-async function main () {
-  const res = await fetch(URL)
+async function fetchSource (source) {
+  const res = await fetch(source.url)
 
-  if (!res.ok) throw new Error(`HTTP Error ${res.status}`)
-
-  const csvData = await res.text()
-
-  if (csvData.startsWith('<!DOCTYPE html') || csvData.includes('<html')) {
-    throw new Error('Received HTML instead of CSV')
+  if (!res.ok) {
+    throw new Error(`Unable to fetch ${source.name} (${res.status})`)
   }
 
-  const domains = new Set(sanetize(csvData))
+  const text = await res.text()
+
+  if (text.startsWith('<!DOCTYPE html') || text.includes('<html')) {
+    throw new Error(`Received HTML instead of domain list for ${source.name}`)
+  }
+
+  return sanitize(text)
+}
+
+async function main () {
+  const sourceDomains = await Promise.all(SOURCES.map(fetchSource))
+  const domains = new Set(sourceDomains.flat())
   for (const domain of DOMAINS) domains.add(domain)
   const sorted = Array.from(domains).sort()
   await writeFile('domains.json', JSON.stringify(sorted, null, 2))
