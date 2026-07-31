@@ -109,11 +109,14 @@ const DOMAINS = [
 
 const trim = text => text.replace(/^\s+|\s+$/g, '')
 
+const isDomain = domain => /^[a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?(\.[a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?)+$/i.test(domain)
+
 const sanitize = text =>
   text
     .split(/[,\n]/g)
     .map(trim)
     .filter(domain => domain && !domain.startsWith('#'))
+    .filter(isDomain)
 
 async function fetchSource (source) {
   const res = await fetch(source.url)
