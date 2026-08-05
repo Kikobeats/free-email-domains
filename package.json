@@ -2,7 +2,7 @@
   "name": "free-email-domains",
   "description": "Comprehensive list of free email provider domains for signup validation and disposable filtering.",
   "homepage": "https://github.com/Kikobeats/free-email-domains",
-  "version": "1.9.86",
+  "version": "1.9.87",
   "main": "domains.js",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
