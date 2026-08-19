@@ -5,6 +5,10 @@ on:
     branches:
       - master
 
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   contributors:
     if: "${{ github.event.head_commit.message != 'build: contributors' }}"
@@ -48,6 +52,11 @@ jobs:
         uses: pnpm/action-setup@v6
         with:
           version: latest
+      - name: Sync master
+        run: |
+          git config --global user.email ${{ secrets.GIT_EMAIL }}
+          git config --global user.name ${{ secrets.GIT_USERNAME }}
+          git pull origin master
       - name: Install
         run: pnpm install --dangerously-allow-all-builds
       - name: Test
@@ -57,7 +66,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          git config --global user.email ${{ secrets.GIT_EMAIL }}
-          git config --global user.name ${{ secrets.GIT_USERNAME }}
-          git pull origin master
+          if git log -1 --format='%s' | grep -qE '^chore\(release\)'; then
+            echo "nothing new to release"
+            exit 0
+          fi
           npm run release
