@@ -18,6 +18,9 @@ const SOURCES = [
 /** Additional domains not present in the URL */
 const DOMAINS = [
   '2iij.net',
+  'aol.co.uk',
+  'aol.de',
+  'aol.fr',
   'asahi-net.or.jp',
   'au.com',
   'auone-net.jp',
@@ -34,6 +37,7 @@ const DOMAINS = [
   'docomo.ne.jp',
   'dreamwiz.com',
   'dti.ne.jp',
+  'e-mail.de',
   'emnet.ne.jp',
   'emobile.ne.jp',
   'eonet.ne.jp',
@@ -71,6 +75,9 @@ const DOMAINS = [
   'ocn.ne.jp',
   'odn.ad.jp',
   'odn.ne.jp',
+  'online-home.de',
+  'online.de',
+  'onlinehome.de',
   'panda.tnc.ne.jp',
   'paran.com',
   'pdx.ne.jp',
