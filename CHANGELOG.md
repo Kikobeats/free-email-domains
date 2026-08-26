@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.10.0 (2026-08-26)
+
+
+### Features
+
+* add AOL country domains and 1&1/IONOS consumer mail domains ([#71](https://github.com/kikobeats/free-email-domains/issues/71)) ([2ced854](https://github.com/kikobeats/free-email-domains/commit/2ced854d20fa96b3008b95995cc782b17ea277f3))
+
 ### 1.9.111 (2026-08-26)
 
 ### 1.9.110 (2026-08-25)
