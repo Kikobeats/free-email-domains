@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.11.0 (2026-08-31)
+
+
+### Features
+
+* add Norwegian ISP email domains ([#72](https://github.com/kikobeats/free-email-domains/issues/72)) ([27c27a1](https://github.com/kikobeats/free-email-domains/commit/27c27a1496a4741f2cf85e0d5aefa004224df480))
+
 ### 1.10.4 (2026-08-31)
 
 ### 1.10.3 (2026-08-30)
