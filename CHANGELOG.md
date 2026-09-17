@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.12.0 (2026-09-17)
+
+
+### Features
+
+* restore 112 free webmail provider domains ([#73](https://github.com/kikobeats/free-email-domains/issues/73)) ([452b743](https://github.com/kikobeats/free-email-domains/commit/452b7434d9f6ec472b61a3cd91fa49246020d19e)), closes [#72](https://github.com/kikobeats/free-email-domains/issues/72)
+
 ### 1.11.17 (2026-09-17)
 
 ### 1.11.16 (2026-09-16)
