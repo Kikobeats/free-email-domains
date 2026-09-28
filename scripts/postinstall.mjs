@@ -278,4 +278,4 @@ async function main () {
   await writeFile('domains.json', JSON.stringify(sorted, null, 2))
 }
 
-main().catch(error => console.error(error) || process.exit(1))
+main().catch(error => console.warn('free-email-domains: unable to refresh domains, using the bundled list', error))
