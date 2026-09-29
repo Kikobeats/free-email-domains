@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.12.13 (2026-09-29)
+
+
+### Bug Fixes
+
+* don't fail install when domain sources are unreachable ([#75](https://github.com/kikobeats/free-email-domains/issues/75)) ([0f7b5a4](https://github.com/kikobeats/free-email-domains/commit/0f7b5a4ca78fbfe0be80a0d0e9a7c8eed10d01c0))
+
 ### 1.12.12 (2026-09-29)
 
 ### 1.12.11 (2026-09-28)
