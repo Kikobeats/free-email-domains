@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.13.0 (2026-10-09)
+
+
+### Features
+
+* add passmail.net and aliasvault.net alias domains ([#77](https://github.com/kikobeats/free-email-domains/issues/77)) ([7a0216e](https://github.com/kikobeats/free-email-domains/commit/7a0216edcc0e64c4631acd65b1baaa5b0c2c6e5d)), closes [#76](https://github.com/kikobeats/free-email-domains/issues/76)
+
 ### 1.12.23 (2026-10-09)
 
 ### 1.12.22 (2026-10-08)
