@@ -19,6 +19,7 @@ const SOURCES = [
 const DOMAINS = [
   '2iij.net',
   'adsl.no',
+  'aliasvault.net',
   'aol.co.uk',
   'aol.de',
   'aol.fr',
@@ -151,6 +152,7 @@ const DOMAINS = [
   'onlinehome.de',
   'panda.tnc.ne.jp',
   'paran.com',
+  'passmail.net',
   'pdx.ne.jp',
   'pikara.ne.jp',
   'plala.or.jp',
