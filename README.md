@@ -3,11 +3,20 @@
 [![Last version](https://img.shields.io/github/v/tag/Kikobeats/free-email-domains?style=flat-square)](https://github.com/Kikobeats/free-email-domains/releases)
 [![NPM Status](https://img.shields.io/npm/dm/free-email-domains?style=flat-square)](https://www.npmjs.com/package/free-email-domains)
 
-> Curated list of free and disposable email domains for signup filtering, lead quality, and abuse prevention.
+> Free and disposable email domains in a single list, validated against DNS every day.
+
+## Highlights
+
+- **30,000+ domains.** Free providers (Gmail, Yahoo, Outlook and thousands of regional ones) and disposable providers (Mailinator, Temp Mail and the like) together.
+- **Six sources plus a curated list.** Merged, deduplicated and lowercased.
+- **Validated against DNS.** A domain that cannot receive email is removed, so the list has no dead weight.
+- **Updated every day.** A new version is published whenever the list changes.
+- **Zero dependencies.** It is a JSON array of strings, with TypeScript types.
 
 ## Why use it
 
 - Block temporary or throwaway inboxes during signup.
+- Tell personal emails from work emails to qualify leads.
 - Reduce fake form submissions.
 - Keep CRM and email workflows cleaner.
 
@@ -19,11 +28,47 @@ $ npm install free-email-domains --save
 
 ## Usage
 
+The module exports an array of lowercase domains:
+
 ```js
 const freeEmailDomains = require('free-email-domains')
 
 freeEmailDomains.includes('gmail.com') // => true
+freeEmailDomains.includes('mailinator.com') // => true
 freeEmailDomains.includes('your-company.com') // => false
+```
+
+It works the same with ES modules:
+
+```js
+import freeEmailDomains from 'free-email-domains'
+```
+
+### Checking an email address
+
+Create a `Set` once to get constant time lookups, then compare the part after the last `@` in lowercase:
+
+```js
+const freeEmailDomains = new Set(require('free-email-domains'))
+
+const isFreeEmail = email => {
+  const domain = email.slice(email.lastIndexOf('@') + 1).toLowerCase()
+  return freeEmailDomains.has(domain)
+}
+
+isFreeEmail('hello@gmail.com') // => true
+isFreeEmail('Hello@Mailinator.com') // => true
+isFreeEmail('hello@your-company.com') // => false
+```
+
+Domains are matched exactly: `gmail.com` is listed, `mail.gmail.com` is not.
+
+### Without Node.js
+
+The list is a plain JSON file, so any language can use it:
+
+```bash
+$ curl -sL https://cdn.jsdelivr.net/npm/free-email-domains/domains.json
 ```
 
 ## How the list is built
