@@ -107,6 +107,7 @@
   "files": [
     "domains.js",
     "domains.json",
+    "inactive-domains.json",
     "index.d.ts",
     "scripts"
   ],
@@ -120,7 +121,8 @@
     "release": "standard-version -a",
     "release:github": "github-generate-release",
     "release:tags": "git push --follow-tags origin HEAD:master",
-    "test": "mocha"
+    "test": "mocha",
+    "update": "node scripts/update.mjs"
   },
   "license": "MIT",
   "commitlint": {
@@ -134,7 +136,7 @@
     }
   },
   "nano-staged": {
-    "*.js": [
+    "*.{js,mjs}": [
       "npx @kikobeats/prettier-standard",
       "standard --fix"
     ],
