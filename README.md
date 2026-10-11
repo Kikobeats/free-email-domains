@@ -1,7 +1,7 @@
 # free-email-domains
 
-![Last version](https://img.shields.io/github/tag/Kikobeats/free-email-domains.svg?style=flat-square)
-[![NPM Status](https://img.shields.io/npm/dm/free-email-domains.svg?style=flat-square)](https://www.npmjs.org/package/free-email-domains)
+[![Last version](https://img.shields.io/github/v/tag/Kikobeats/free-email-domains?style=flat-square)](https://github.com/Kikobeats/free-email-domains/releases)
+[![NPM Status](https://img.shields.io/npm/dm/free-email-domains?style=flat-square)](https://www.npmjs.com/package/free-email-domains)
 
 > Curated list of free and disposable email domains for signup filtering, lead quality, and abuse prevention.
 
