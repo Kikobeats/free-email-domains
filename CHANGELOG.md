@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.14.0 (2026-10-11)
+
+
+### Features
+
+* validate domains against DNS and add three disposable sources ([#79](https://github.com/kikobeats/free-email-domains/issues/79)) ([e8d7aec](https://github.com/kikobeats/free-email-domains/commit/e8d7aec200fabbbe912e450824491649753b1d8b))
+
 ### 1.13.3 (2026-10-11)
 
 ### 1.13.2 (2026-10-11)
