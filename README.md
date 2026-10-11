@@ -9,7 +9,7 @@
 
 - **30,000+ domains.** Free providers (Gmail, Yahoo, Outlook and thousands of regional ones) and disposable providers (Mailinator, Temp Mail and the like) together.
 - **Six sources plus a curated list.** Merged, deduplicated and lowercased.
-- **Validated against DNS.** A domain that cannot receive email is removed, so the list has no dead weight.
+- **Validated against DNS.** A domain is removed when its DNS records say it cannot receive email.
 - **Updated every day.** A new version is published whenever the list changes.
 - **Zero dependencies.** It is a JSON array of strings, with TypeScript types.
 
