@@ -28,7 +28,7 @@ jobs:
       - name: Cron
         run: |
           git config --global user.email ${{ secrets.GIT_EMAIL }}
-          git config --global user.name ${{ secrets.GIT_USERNAME }}g
+          git config --global user.name ${{ secrets.GIT_USERNAME }}
           npm run update
           git add domains.json inactive-domains.json
           git diff-index --quiet HEAD || git commit -m 'build(update): emails' --no-verify
