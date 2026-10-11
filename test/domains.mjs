@@ -1,6 +1,12 @@
 import should from 'should'
 
-import { buildDomains, fetchSource, fetchSourceDomains, sanitize } from '../scripts/domains.mjs'
+import {
+  buildDomains,
+  fetchSource,
+  fetchSourceDomains,
+  isHostname,
+  sanitize
+} from '../scripts/domains.mjs'
 import { ALLOWLIST, DOMAINS, SOURCES } from '../scripts/sources.mjs'
 
 const SOURCE = { name: 'Example feed', url: 'https://example.test/domains.txt', minDomains: 2 }
@@ -117,6 +123,11 @@ describe('sources', () => {
 
   it('expects a minimum number of domains from every source', () => {
     for (const source of SOURCES) should(source.minDomains).be.above(0)
+  })
+
+  it('keeps the allowlist sorted, unique and made of hostnames', () => {
+    should(ALLOWLIST).eql(Array.from(new Set(ALLOWLIST)).sort())
+    should(ALLOWLIST.filter(domain => !isHostname(domain))).eql([])
   })
 
   it('never curates a domain that is also allowlisted', () => {
