@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.14.2 (2026-10-11)
+
+
+### Bug Fixes
+
+* allowlist 41 organization domains listed by HubSpot ([#82](https://github.com/kikobeats/free-email-domains/issues/82)) ([c04df34](https://github.com/kikobeats/free-email-domains/commit/c04df34f3051b8f2a2c1005f55fb9b6df718f37f))
+
 ### 1.14.1 (2026-10-11)
 
 ## 1.14.0 (2026-10-11)
