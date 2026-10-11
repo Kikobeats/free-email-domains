@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.15.0 (2026-10-11)
+
+
+### Features
+
+* add ISP and cable-provider mail domains ([#78](https://github.com/kikobeats/free-email-domains/issues/78)) ([5bc3bf7](https://github.com/kikobeats/free-email-domains/commit/5bc3bf7fc885020fd92602b682b1eb9d8de3b900))
+
 ### 1.14.2 (2026-10-11)
 
 
