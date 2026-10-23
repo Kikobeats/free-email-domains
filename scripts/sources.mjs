@@ -79,6 +79,7 @@ export const ALLOWLIST = [
   'techspot.com',
   'theporndude.com',
   'toast.com',
+  'topregal.com',
   'unican.es',
   'xoom.com'
 ]
