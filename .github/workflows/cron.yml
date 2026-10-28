@@ -32,5 +32,5 @@ jobs:
           npm run update
           git add domains.json inactive-domains.json
           git diff-index --quiet HEAD || git commit -m 'build(update): emails' --no-verify
-          git push origin ${{ github.head_ref }} || true
+          git push origin HEAD
           curl -fsS -m 10 --retry 5 -o /dev/null https://hc-ping.com/5da57132-d653-45c9-820b-87d7e03115a3
