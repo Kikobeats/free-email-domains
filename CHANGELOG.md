@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.15.19 (2026-10-28)
+
+
+### Bug Fixes
+
+* allowlist topregal.com ([#83](https://github.com/kikobeats/free-email-domains/issues/83)) ([8330f4f](https://github.com/kikobeats/free-email-domains/commit/8330f4fca803098c8dcdb69b7bdd738aedafd9b6))
+
 ### 1.15.18 (2026-10-28)
 
 ### 1.15.17 (2026-10-28)
