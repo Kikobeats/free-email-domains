@@ -33,7 +33,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 
-* allowlist topregal.com ([#83](https://github.com/kikobeats/free-email-domains/issues/83)) ([8330f4f](https://github.com/kikobeats/free-email-domains/commit/8330f4fca803098c8dcdb69b7bdd738aedafd9b6))
+* allowlist topregal.com ([#83](https://github.com/microlinkhq/free-email-domains/issues/83)) ([8330f4f](https://github.com/microlinkhq/free-email-domains/commit/8330f4fca803098c8dcdb69b7bdd738aedafd9b6))
 
 ### 1.15.18 (2026-10-28)
 
@@ -76,14 +76,14 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* add ISP and cable-provider mail domains ([#78](https://github.com/kikobeats/free-email-domains/issues/78)) ([5bc3bf7](https://github.com/kikobeats/free-email-domains/commit/5bc3bf7fc885020fd92602b682b1eb9d8de3b900))
+* add ISP and cable-provider mail domains ([#78](https://github.com/microlinkhq/free-email-domains/issues/78)) ([5bc3bf7](https://github.com/microlinkhq/free-email-domains/commit/5bc3bf7fc885020fd92602b682b1eb9d8de3b900))
 
 ### 1.14.2 (2026-10-11)
 
 
 ### Bug Fixes
 
-* allowlist 41 organization domains listed by HubSpot ([#82](https://github.com/kikobeats/free-email-domains/issues/82)) ([c04df34](https://github.com/kikobeats/free-email-domains/commit/c04df34f3051b8f2a2c1005f55fb9b6df718f37f))
+* allowlist 41 organization domains listed by HubSpot ([#82](https://github.com/microlinkhq/free-email-domains/issues/82)) ([c04df34](https://github.com/microlinkhq/free-email-domains/commit/c04df34f3051b8f2a2c1005f55fb9b6df718f37f))
 
 ### 1.14.1 (2026-10-11)
 
@@ -92,7 +92,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* validate domains against DNS and add three disposable sources ([#79](https://github.com/kikobeats/free-email-domains/issues/79)) ([e8d7aec](https://github.com/kikobeats/free-email-domains/commit/e8d7aec200fabbbe912e450824491649753b1d8b))
+* validate domains against DNS and add three disposable sources ([#79](https://github.com/microlinkhq/free-email-domains/issues/79)) ([e8d7aec](https://github.com/microlinkhq/free-email-domains/commit/e8d7aec200fabbbe912e450824491649753b1d8b))
 
 ### 1.13.3 (2026-10-11)
 
@@ -105,7 +105,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* add passmail.net and aliasvault.net alias domains ([#77](https://github.com/kikobeats/free-email-domains/issues/77)) ([7a0216e](https://github.com/kikobeats/free-email-domains/commit/7a0216edcc0e64c4631acd65b1baaa5b0c2c6e5d)), closes [#76](https://github.com/kikobeats/free-email-domains/issues/76)
+* add passmail.net and aliasvault.net alias domains ([#77](https://github.com/microlinkhq/free-email-domains/issues/77)) ([7a0216e](https://github.com/microlinkhq/free-email-domains/commit/7a0216edcc0e64c4631acd65b1baaa5b0c2c6e5d)), closes [#76](https://github.com/microlinkhq/free-email-domains/issues/76)
 
 ### 1.12.23 (2026-10-09)
 
@@ -132,7 +132,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 
-* don't fail install when domain sources are unreachable ([#75](https://github.com/kikobeats/free-email-domains/issues/75)) ([0f7b5a4](https://github.com/kikobeats/free-email-domains/commit/0f7b5a4ca78fbfe0be80a0d0e9a7c8eed10d01c0))
+* don't fail install when domain sources are unreachable ([#75](https://github.com/microlinkhq/free-email-domains/issues/75)) ([0f7b5a4](https://github.com/microlinkhq/free-email-domains/commit/0f7b5a4ca78fbfe0be80a0d0e9a7c8eed10d01c0))
 
 ### 1.12.12 (2026-09-29)
 
@@ -163,7 +163,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* restore 112 free webmail provider domains ([#73](https://github.com/kikobeats/free-email-domains/issues/73)) ([452b743](https://github.com/kikobeats/free-email-domains/commit/452b7434d9f6ec472b61a3cd91fa49246020d19e)), closes [#72](https://github.com/kikobeats/free-email-domains/issues/72)
+* restore 112 free webmail provider domains ([#73](https://github.com/microlinkhq/free-email-domains/issues/73)) ([452b743](https://github.com/microlinkhq/free-email-domains/commit/452b7434d9f6ec472b61a3cd91fa49246020d19e)), closes [#72](https://github.com/microlinkhq/free-email-domains/issues/72)
 
 ### 1.11.17 (2026-09-17)
 
@@ -204,7 +204,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* add Norwegian ISP email domains ([#72](https://github.com/kikobeats/free-email-domains/issues/72)) ([27c27a1](https://github.com/kikobeats/free-email-domains/commit/27c27a1496a4741f2cf85e0d5aefa004224df480))
+* add Norwegian ISP email domains ([#72](https://github.com/microlinkhq/free-email-domains/issues/72)) ([27c27a1](https://github.com/microlinkhq/free-email-domains/commit/27c27a1496a4741f2cf85e0d5aefa004224df480))
 
 ### 1.10.4 (2026-08-31)
 
@@ -219,7 +219,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* add AOL country domains and 1&1/IONOS consumer mail domains ([#71](https://github.com/kikobeats/free-email-domains/issues/71)) ([2ced854](https://github.com/kikobeats/free-email-domains/commit/2ced854d20fa96b3008b95995cc782b17ea277f3))
+* add AOL country domains and 1&1/IONOS consumer mail domains ([#71](https://github.com/microlinkhq/free-email-domains/issues/71)) ([2ced854](https://github.com/microlinkhq/free-email-domains/commit/2ced854d20fa96b3008b95995cc782b17ea277f3))
 
 ### 1.9.111 (2026-08-26)
 
@@ -448,49 +448,49 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* add disposable-email-domains blocklist source ([#65](https://github.com/kikobeats/free-email-domains/issues/65)) ([739110d](https://github.com/kikobeats/free-email-domains/commit/739110d75ea65fba53f715eee14a6e86007d9c8b))
+* add disposable-email-domains blocklist source ([#65](https://github.com/microlinkhq/free-email-domains/issues/65)) ([739110d](https://github.com/microlinkhq/free-email-domains/commit/739110d75ea65fba53f715eee14a6e86007d9c8b))
 
 ## 1.8.0 (2026-05-11)
 
 
 ### Features
 
-* add disposable-email-domains blocklist source ([#65](https://github.com/kikobeats/free-email-domains/issues/65)) ([739110d](https://github.com/kikobeats/free-email-domains/commit/739110d75ea65fba53f715eee14a6e86007d9c8b))
+* add disposable-email-domains blocklist source ([#65](https://github.com/microlinkhq/free-email-domains/issues/65)) ([739110d](https://github.com/microlinkhq/free-email-domains/commit/739110d75ea65fba53f715eee14a6e86007d9c8b))
 
 ## 1.7.0 (2026-05-11)
 
 
 ### Features
 
-* add castle source and deduplicate manual domains ([#64](https://github.com/kikobeats/free-email-domains/issues/64)) ([5aa7f8a](https://github.com/kikobeats/free-email-domains/commit/5aa7f8aa61f5361d8bbcb208fbffbf2db74bc429))
+* add castle source and deduplicate manual domains ([#64](https://github.com/microlinkhq/free-email-domains/issues/64)) ([5aa7f8a](https://github.com/microlinkhq/free-email-domains/commit/5aa7f8aa61f5361d8bbcb208fbffbf2db74bc429))
 
 ## 1.6.0 (2026-05-11)
 
 
 ### Features
 
-* add castle source and deduplicate manual domains ([#64](https://github.com/kikobeats/free-email-domains/issues/64)) ([5aa7f8a](https://github.com/kikobeats/free-email-domains/commit/5aa7f8aa61f5361d8bbcb208fbffbf2db74bc429))
+* add castle source and deduplicate manual domains ([#64](https://github.com/microlinkhq/free-email-domains/issues/64)) ([5aa7f8a](https://github.com/microlinkhq/free-email-domains/commit/5aa7f8aa61f5361d8bbcb208fbffbf2db74bc429))
 
 ## 1.5.0 (2026-05-11)
 
 
 ### Features
 
-* Add Japanese free email providers ([#63](https://github.com/kikobeats/free-email-domains/issues/63)) ([11583ff](https://github.com/kikobeats/free-email-domains/commit/11583ff904b8761687615d5481df254a7cd3a28c))
+* Add Japanese free email providers ([#63](https://github.com/microlinkhq/free-email-domains/issues/63)) ([11583ff](https://github.com/microlinkhq/free-email-domains/commit/11583ff904b8761687615d5481df254a7cd3a28c))
 
 ## 1.4.0 (2026-05-09)
 
 
 ### Features
 
-* add Korean free email providers ([#62](https://github.com/kikobeats/free-email-domains/issues/62)) ([8befc41](https://github.com/kikobeats/free-email-domains/commit/8befc41a0366fac0bc54390974dd75983eb442e2))
+* add Korean free email providers ([#62](https://github.com/microlinkhq/free-email-domains/issues/62)) ([8befc41](https://github.com/microlinkhq/free-email-domains/commit/8befc41a0366fac0bc54390974dd75983eb442e2))
 
 ## 1.3.0 (2026-05-09)
 
 
 ### Features
 
-* add Korean free email providers ([#62](https://github.com/kikobeats/free-email-domains/issues/62)) ([8befc41](https://github.com/kikobeats/free-email-domains/commit/8befc41a0366fac0bc54390974dd75983eb442e2))
+* add Korean free email providers ([#62](https://github.com/microlinkhq/free-email-domains/issues/62)) ([8befc41](https://github.com/microlinkhq/free-email-domains/commit/8befc41a0366fac0bc54390974dd75983eb442e2))
 
 ### 1.2.28 (2026-05-09)
 
@@ -549,28 +549,28 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 
-* add request library ([339d85b](https://github.com/kikobeats/free-email-domains/commit/339d85bb31229e7fd48951b0dece42f2df889cd9)), closes [#46](https://github.com/kikobeats/free-email-domains/issues/46)
+* add request library ([339d85b](https://github.com/microlinkhq/free-email-domains/commit/339d85bb31229e7fd48951b0dece42f2df889cd9)), closes [#46](https://github.com/microlinkhq/free-email-domains/issues/46)
 
 ### 1.2.1 (2023-06-21)
 
 
 ### Bug Fixes
 
-* add request library ([339d85b](https://github.com/kikobeats/free-email-domains/commit/339d85bb31229e7fd48951b0dece42f2df889cd9)), closes [#46](https://github.com/kikobeats/free-email-domains/issues/46)
+* add request library ([339d85b](https://github.com/microlinkhq/free-email-domains/commit/339d85bb31229e7fd48951b0dece42f2df889cd9)), closes [#46](https://github.com/microlinkhq/free-email-domains/issues/46)
 
 ## 1.2.0 (2023-06-21)
 
 
 ### Features
 
-* more domains ([#45](https://github.com/kikobeats/free-email-domains/issues/45)) ([7a2086e](https://github.com/kikobeats/free-email-domains/commit/7a2086ea8f15ccfe02939c02e3c3266cd8b3e05e))
+* more domains ([#45](https://github.com/microlinkhq/free-email-domains/issues/45)) ([7a2086e](https://github.com/microlinkhq/free-email-domains/commit/7a2086ea8f15ccfe02939c02e3c3266cd8b3e05e))
 
 ## 1.1.0 (2023-06-21)
 
 
 ### Features
 
-* more domains ([#45](https://github.com/kikobeats/free-email-domains/issues/45)) ([7a2086e](https://github.com/kikobeats/free-email-domains/commit/7a2086ea8f15ccfe02939c02e3c3266cd8b3e05e))
+* more domains ([#45](https://github.com/microlinkhq/free-email-domains/issues/45)) ([7a2086e](https://github.com/microlinkhq/free-email-domains/commit/7a2086ea8f15ccfe02939c02e3c3266cd8b3e05e))
 
 ### 1.0.43 (2023-05-31)
 
@@ -633,51 +633,51 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 
-* linter ([fce4919](https://github.com/kikobeats/free-email-domains/commit/fce4919860df41cb7a3511d75c0e6c4567e516f1))
+* linter ([fce4919](https://github.com/microlinkhq/free-email-domains/commit/fce4919860df41cb7a3511d75c0e6c4567e516f1))
 
-### [1.0.14](https://github.com/kikobeats/free-email-domains/compare/v1.0.13...v1.0.14) (2021-05-18)
+### [1.0.14](https://github.com/microlinkhq/free-email-domains/compare/v1.0.13...v1.0.14) (2021-05-18)
 
-### [1.0.13](https://github.com/kikobeats/free-email-domains/compare/v1.0.12...v1.0.13) (2021-04-22)
+### [1.0.13](https://github.com/microlinkhq/free-email-domains/compare/v1.0.12...v1.0.13) (2021-04-22)
 
-### [1.0.12](https://github.com/kikobeats/free-email-domains/compare/v1.0.11...v1.0.12) (2021-04-04)
+### [1.0.12](https://github.com/microlinkhq/free-email-domains/compare/v1.0.11...v1.0.12) (2021-04-04)
 
-### [1.0.11](https://github.com/kikobeats/free-email-domains/compare/v1.0.10...v1.0.11) (2021-04-04)
+### [1.0.11](https://github.com/microlinkhq/free-email-domains/compare/v1.0.10...v1.0.11) (2021-04-04)
 
-### [1.0.10](https://github.com/kikobeats/free-email-domains/compare/v1.0.9...v1.0.10) (2021-02-18)
+### [1.0.10](https://github.com/microlinkhq/free-email-domains/compare/v1.0.9...v1.0.10) (2021-02-18)
 
-### [1.0.9](https://github.com/kikobeats/free-email-domains/compare/v1.0.8...v1.0.9) (2020-10-21)
+### [1.0.9](https://github.com/microlinkhq/free-email-domains/compare/v1.0.8...v1.0.9) (2020-10-21)
 
-### [1.0.8](https://github.com/kikobeats/free-email-domains/compare/v1.0.7...v1.0.8) (2020-09-21)
+### [1.0.8](https://github.com/microlinkhq/free-email-domains/compare/v1.0.7...v1.0.8) (2020-09-21)
 
-### [1.0.7](https://github.com/kikobeats/free-email-domains/compare/v1.0.6...v1.0.7) (2020-09-07)
+### [1.0.7](https://github.com/microlinkhq/free-email-domains/compare/v1.0.6...v1.0.7) (2020-09-07)
 
-### [1.0.6](https://github.com/kikobeats/free-email-domains/compare/v1.0.5...v1.0.6) (2020-07-08)
+### [1.0.6](https://github.com/microlinkhq/free-email-domains/compare/v1.0.5...v1.0.6) (2020-07-08)
 
-### [1.0.5](https://github.com/kikobeats/free-email-domains/compare/v1.0.4...v1.0.5) (2020-07-06)
+### [1.0.5](https://github.com/microlinkhq/free-email-domains/compare/v1.0.4...v1.0.5) (2020-07-06)
 
 ### 1.0.4 (2020-07-06)
 
 <a name="1.0.2"></a>
 ## 1.0.2 (2018-10-14)
 
-* Block standard version ([c2a7122](https://github.com/kikobeats/free-email-domains/commit/c2a7122))
-* Handle errors ([afedd8a](https://github.com/kikobeats/free-email-domains/commit/afedd8a))
-* Migrate husky ([afb33a5](https://github.com/kikobeats/free-email-domains/commit/afb33a5))
+* Block standard version ([c2a7122](https://github.com/microlinkhq/free-email-domains/commit/c2a7122))
+* Handle errors ([afedd8a](https://github.com/microlinkhq/free-email-domains/commit/afedd8a))
+* Migrate husky ([afb33a5](https://github.com/microlinkhq/free-email-domains/commit/afb33a5))
 
 
 
 <a name="1.0.1"></a>
 ## 1.0.1 (2018-03-23)
 
-* Generate file on postinstall ([faa65eb](https://github.com/kikobeats/free-email-domains/commit/faa65eb))
+* Generate file on postinstall ([faa65eb](https://github.com/microlinkhq/free-email-domains/commit/faa65eb))
 
 
 
 <a name="1.0.0"></a>
 # 1.0.0 (2017-11-29)
 
-* First commit ([1a6dc0b](https://github.com/kikobeats/free-email-domains/commit/1a6dc0b))
-* Fix linter ([fbd00f3](https://github.com/kikobeats/free-email-domains/commit/fbd00f3))
-* Update meta ([02349c9](https://github.com/kikobeats/free-email-domains/commit/02349c9))
-* Update README.md ([3e0c11e](https://github.com/kikobeats/free-email-domains/commit/3e0c11e))
-* docs(readme): add Greenkeeper badge ([af89158](https://github.com/kikobeats/free-email-domains/commit/af89158))
+* First commit ([1a6dc0b](https://github.com/microlinkhq/free-email-domains/commit/1a6dc0b))
+* Fix linter ([fbd00f3](https://github.com/microlinkhq/free-email-domains/commit/fbd00f3))
+* Update meta ([02349c9](https://github.com/microlinkhq/free-email-domains/commit/02349c9))
+* Update README.md ([3e0c11e](https://github.com/microlinkhq/free-email-domains/commit/3e0c11e))
+* docs(readme): add Greenkeeper badge ([af89158](https://github.com/microlinkhq/free-email-domains/commit/af89158))

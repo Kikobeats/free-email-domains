@@ -1,3 +1,10 @@
+<div align="center">
+  <img src="https://github.com/microlinkhq/cdn/raw/master/dist/logo/banner.png#gh-light-mode-only" alt="microlink logo">
+  <img src="https://github.com/microlinkhq/cdn/raw/master/dist/logo/banner-dark.png#gh-dark-mode-only" alt="microlink logo">
+  <br>
+  <br>
+</div>
+
 # free-email-domains
 
 [![Last version](https://img.shields.io/github/v/tag/microlinkhq/free-email-domains?style=flat-square)](https://github.com/microlinkhq/free-email-domains/releases)
@@ -124,7 +131,7 @@ $ node scripts/postinstall.mjs
 
 ## License
 
-**free-email-domains** © [Kiko Beats](https://kikobeats.com), released under the [MIT](https://github.com/microlinkhq/free-email-domains/blob/master/LICENSE.md) License.<br>
-Authored and maintained by Kiko Beats with help from [contributors](https://github.com/microlinkhq/free-email-domains/contributors).
+**free-email-domains** © [Microlink](https://microlink.io), released under the [MIT](https://github.com/microlinkhq/free-email-domains/blob/master/LICENSE.md) License.<br>
+Authored and maintained by [Kiko Beats](https://kikobeats.com) with help from [contributors](https://github.com/microlinkhq/free-email-domains/contributors).
 
-> [kikobeats.com](https://kikobeats.com) · GitHub [@Kiko Beats](https://github.com/Kikobeats) · X [@Kikobeats](https://x.com/Kikobeats)
+> [microlink.io](https://microlink.io) · GitHub [microlinkhq](https://github.com/microlinkhq) · X [@microlinkhq](https://x.com/microlinkhq)
