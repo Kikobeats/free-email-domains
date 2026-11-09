@@ -1,6 +1,6 @@
 # free-email-domains
 
-[![Last version](https://img.shields.io/github/v/tag/Kikobeats/free-email-domains?style=flat-square)](https://github.com/Kikobeats/free-email-domains/releases)
+[![Last version](https://img.shields.io/github/v/tag/microlinkhq/free-email-domains?style=flat-square)](https://github.com/microlinkhq/free-email-domains/releases)
 [![NPM Status](https://img.shields.io/npm/dm/free-email-domains?style=flat-square)](https://www.npmjs.com/package/free-email-domains)
 
 > Free and disposable email domains in a single list, validated against DNS every day.
@@ -124,7 +124,7 @@ $ node scripts/postinstall.mjs
 
 ## License
 
-**free-email-domains** © [Kiko Beats](https://kikobeats.com), released under the [MIT](https://github.com/Kikobeats/free-email-domains/blob/master/LICENSE.md) License.<br>
-Authored and maintained by Kiko Beats with help from [contributors](https://github.com/Kikobeats/free-email-domains/contributors).
+**free-email-domains** © [Kiko Beats](https://kikobeats.com), released under the [MIT](https://github.com/microlinkhq/free-email-domains/blob/master/LICENSE.md) License.<br>
+Authored and maintained by Kiko Beats with help from [contributors](https://github.com/microlinkhq/free-email-domains/contributors).
 
 > [kikobeats.com](https://kikobeats.com) · GitHub [@Kiko Beats](https://github.com/Kikobeats) · X [@Kikobeats](https://x.com/Kikobeats)
