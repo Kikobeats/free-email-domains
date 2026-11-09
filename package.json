@@ -2,7 +2,7 @@
   "name": "free-email-domains",
   "description": "Free and disposable email domains in a single list, validated against DNS every day.",
   "homepage": "https://github.com/microlinkhq/free-email-domains",
-  "version": "1.15.31",
+  "version": "1.15.32",
   "main": "domains.js",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
