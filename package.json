@@ -1,7 +1,7 @@
 {
   "name": "free-email-domains",
   "description": "Free and disposable email domains in a single list, validated against DNS every day.",
-  "homepage": "https://github.com/Kikobeats/free-email-domains",
+  "homepage": "https://github.com/microlinkhq/free-email-domains",
   "version": "1.15.31",
   "main": "domains.js",
   "author": {
@@ -77,10 +77,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kikobeats/free-email-domains.git"
+    "url": "git+https://github.com/microlinkhq/free-email-domains.git"
   },
   "bugs": {
-    "url": "https://github.com/Kikobeats/free-email-domains/issues"
+    "url": "https://github.com/microlinkhq/free-email-domains/issues"
   },
   "keywords": [
     "blocklist",
