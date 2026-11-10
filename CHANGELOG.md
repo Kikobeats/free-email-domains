@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.16.0 (2026-11-10)
+
+
+### Features
+
+* add the missing Tuta mail domains ([#88](https://github.com/microlinkhq/free-email-domains/issues/88)) ([fe3b35c](https://github.com/microlinkhq/free-email-domains/commit/fe3b35cd388784763e9e9b7cb3fc5bf229ca5bcb))
+
 ### 1.15.33 (2026-11-10)
 
 ### 1.15.32 (2026-11-09)
